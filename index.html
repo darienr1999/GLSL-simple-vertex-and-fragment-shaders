@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Assignment 4: Shaders</title>
+    <link rel="stylesheet" type="text/css" href="./assets/common.css" media="screen" />
+    <script src="./utils/throttle.js"></script>
+    <meta charset="UTF-8">
+</head>
+<body >
+    <div class="description">
+        Shaders, shaders everywhere!
+    </div>
+    <div>Pick a shader effect: 
+        <button id="checker" class="button" onclick="onEffect1();">Checker</button>		
+        <button id="swiss cheese" class="button" onclick="onEffect2();">swiss cheese</button>		
+        <button id="Warble" class="button" onclick="onEffect3();">Warble</button>		
+        <button id="effect4" class="button" onclick="onEffect4();">Effect 4</button>		
+    </div>
+           
+    <div>
+        <label for="number">Number (0..1): </label>
+        <input id="number" type="range" name="number" min="0" max="1" value="0.2" step="0.05">
+    </div>
+    <div id="drawing"></div>
+
+<script type="module" src="./src/app.ts"></script>
+</body>
+</html>
